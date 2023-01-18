@@ -1,0 +1,207 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+
+ body{
+    font-family: sans-serif;
+ }
+ ul{
+    list-style: none;
+ }
+ a{
+    text-decoration: none;
+ }
+
+ .container{
+    padding: 30px 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 48px;
+ }
+
+ .navigation{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+ }
+
+ .nav-list{
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+ }
+ .nav-link{
+    font-size: 18px;
+    color: #867A66;
+ }
+
+ .header{
+    background-image: url(./img/Rectangle\ 1.png);
+    background-position: center;
+    background-size: cover;
+    height: 60vh;
+    width: 100%;
+    position: relative;
+ }
+
+ .header h1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-weight: 700;
+    font-size: 71px;
+    color: #fff;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+}
+
+.header-info{
+    background: #352200;
+    border: 1px solid #FFFFFF;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 43px 50px;
+    gap: 104px;
+    position: absolute;
+    left: 25%;
+    bottom: -12%;
+    color: #EBE9E5;
+    line-height: 1.5;
+}
+.header-info p{
+    font-size: 14px;
+}
+.header-info h3{
+    font-size: 16px;
+}
+
+.header-info .line{
+    height: 0;
+    width: 60px;
+    border: 1px solid #867A66;
+    transform: rotate(90deg);
+}
+
+ .text{
+    text-align: center;
+    margin-top: 100px;
+ }
+
+ .text h2{
+    margin-bottom: 8px;
+    font-size: 40px;
+    font-weight: 700;
+ }
+
+ .text p{
+    font-size: 20px;
+    font-weight: 400;
+    color: #5D4E33;
+    line-height: 1.3;
+ }
+
+ .gallery{
+    display: flex;
+    flex-direction: column;
+    gap: 27px;
+ }
+ .gallery-group{
+    display: flex;
+    flex-direction: row;
+    gap: 27px;
+    width: 100%;
+ }
+
+
+
+/* img hover */
+.hover-color {
+    position: relative;
+    width: 100%;
+  }
+  
+  .hover-color::before {
+    position: absolute;
+    content: '';
+    left: 0;
+    top: 100%;
+    right: 0;
+    bottom: 0;
+    background: #CC8000;
+    transition: all 350ms;
+  }
+  
+  /* top or bottom, to choose where it starts */
+  .hover-color:hover::before {
+    top: 0;
+  }
+  .hover-color img{
+    width: 100%;
+  }
+  .hover-color .hover-color-inner {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    text-align: center;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+  
+  .hover-title {
+      transform: translateY(-4px);
+      opacity: 0; 
+      transition: all 350ms;
+      padding: 50px 50px;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      color: #fff;
+  }
+  .hover-title h2{
+      font-weight: 700;
+      font-size: 48px;
+  }
+  .hover-title span{
+      font-size: 16px;
+      font-weight: 700;
+  }
+  .hover-title p{
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 1.3;
+  }
+  .hover-title .line{
+      height: 1;
+      width: 200px;
+      margin: auto;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+  }
+  .image-icon{
+   margin: 30px auto;
+  }
+  .hover-color a {
+      position: absolute;
+      content: '';
+      left: 0;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      z-index: 1;
+  }
+  
+  .hover-color:hover .hover-title {
+    transform: translateY(0);
+    opacity: 1;
+  }
